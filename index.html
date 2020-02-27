@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Insurance Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Krona+One|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    </div> <!-- This is an unnecessary tag. The browser is smart enough to know and remove it when it compiles, but not in all cases. When you eventually get into "build tools" this definitelly would break when compiling in a build tool.-->
+    <div class="bodyContainer"> <!--  this is called "camelCase". It's an anti-pattern for writing classes like this. Use body-container instead. This will follow kebab-case. -->
+        <div class="bodyTop">
+                <div class="header-container">
+                        <div class="burger-menu"><!-- use a button for interactive items that you might click on and that isn't a link to another page or area of your site https://tinyurl.com/o56lfu3 -->
+                            
+                            <h3>Insurance Agency</h3> <!--I would use the same h1 as below. An h1 is more semantic since I would consider this to be the primary heading of the page still.-->
+                             <span class="toggle">☰</span>          <!-- 👈 Check out my space comment in my separate message. Good naming structure for labeling something as a toggle. A practice I tend to see around is to prefix classes that might be used for JS toggling like "js-toggle" -->
+                        </div>
+                        <div class="full-page-menu"> <!-- A <nav> would be semantic in this situation versus a <div> https://tinyurl.com/kwd8rb5 -->
+                            <h1>Insurance Agency</h1>
+                            <ul> 
+                                <li>Home</li> <!-- I know these don't actually go anywhere since there are no other pages for your project, but you'd use a link here https://tinyurl.com/lbfw3cz -->
+                                <li>Features</li>
+                                <li>Pricing</li>
+                                <li>Contact Us</li>
+                                <li><button> Get Started</button></li> <!-- This is a common gotcha. While the design looks visually like a button, semantically it is a link but you would have to style it like a button https://tinyurl.com/lbfw3cz -->
+                            </ul>
+                        </div><!--full-page-menu-->  <!-- Really good idea to show strucutre with these comments. Check out my "prettier" extension comment. While these comments are definitely helpful, clean formatting will remove the need to have these comments. -->
+                </div><!--header-container-->
+                <div class="topContent"> <!-- same camelCase comment to kebab-case as above. Also use a section instead of a div for large sections of content that are similar to each other-->
+                    <div class="topContent-a">
+                            <img src="Screen Shot 2020-02-20 at 12.42.20 AM.png" alt="screenshot">  <!-- while technically this works having spaces in the image source, this can break in build tools when you get to those. Best to use kebab-case for file names. Also the alt="screenshot" isn't as helpful to those with screenreaders. Try something like "Screenshot of Insurance Agency Dashboard" -->
+                    </div>
+                        
+                    <div class="topContent-b">
+                      <div class="topContent-b-one">  <!-- I don't think you need this div. Maybe take the class and use it on the <h2> below-->
+                          <h2>There's Never a Better Time Than Now</h2> 
+                    </div>     
+                      <div class="topContent-b-two">
+                            <p>Let Agent Alive give you a competetive advantage over direct writers online. Now you can do everything direct carriers can do. From live connection, to real-time recorded signatures, to ID card and document storage for your client.</p>
+                            <div class="topContent-buttons">
+                                    <button>Try Now</button>
+                                       <div class="topContent-buttons-text">
+                                                <img src="play-circle-solid.svg" alt="play-circle-solid"> 
+                                                <p> See Agent Alive In Action</p>
+                                       </div> 
+                                   
+                            </div>
+                            
+                    </div>
+                      </div>    
+                        
+                   
+                </div>
+        </div><!--bodyTop-->
+        <div class="bodyBottom"> <!-- A section tag would be good here instead of a div -->
+            <div class="first-text">
+              <h2>Write Any Carrier From Your Client's Phone or Mobile Device</h2>
+              <p>Insurance has been behind the technology curve for many years now but we are opening the door to a new <br> wave of convience and service combined into one, easy to use, insurance platform!</p>
+            </div><!--first-text-->
+           <div class="second-text">
+               <div class="column">
+                    <div class="column-img-a">
+                            <img src="desktop-solid.svg"alt="desktop-solid">
+                    </div>                    
+                    <div class="column-text">
+                            <h4>LIVE VIDEO CALL & CHAT</h4> <!-- Use css for uppercasing whole lines of text. https://tinyurl.com/p88hkwa -->
+                            <p>We all know that clinets value a trusted agent. continue bulding that trust and relationship and at the same time give your client the convience they get from the other online options.</p>
+                            <!-- watch out for all the capital <P> tags above and below. This still should work, but can cause unnecessary errors in the future-->
+                    </div>  
+               </div><!--column-->
+               <div class="column">
+                    <div class="column-img-b">
+                            <img src="credit-card-solid.svg"alt="credit-card-solid">
+                    </div>                    
+                    <div class="column-text">
+                            <h4>TWO STEPS PAYMENTS</h4>
+                            <P>Your client securely stores their card or account information within the app through Stripe integration. Now, when they make a payment, the just enter the payment amound and confirm. You just got paid!</P>     
+                    </div>
+                </div><!--column-->
+                <div class="column">
+                        <div class="column-img-c">
+                                <img src="file-signature-solid.svg"alt="file-signature-solid">
+                        </div>
+                    <div class="column-text">
+                         <h4>REAL-TIME E-SIGN</h4>
+                        <P>No more emailing E-signature documents and waiting hours or days for a response. Get signatures in real-time while connected with your client. Plus, record the proces and reduce liability.</P>
+                    </div>
+                   
+                </div><!--column-->
+           </div><!--second-text-->
+                <div class="viewallFeatures">
+                    <button>View All Features</button>
+                </div>
+        </div><!--bodyBottom-->
+
+    </div><!--bodyContainer---->
+
+       
+    
+
+</body>
+</html>
